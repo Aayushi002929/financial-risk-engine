@@ -1,11 +1,11 @@
 # SentinelRisk: AI/NLP Financial Risk Engine & Capital Analytics - S&P Global & Crisil Campus Hackathon 2026
  
 **Candidate Name:** Aayushi  
-**College Email ID:** [your_id@college.ac.in]  *(Please update with your college email)*  
-**College / Campus:** [Your College Name]  *(Please update with your college name)*  
+**College Email ID:** [aayushi003bteceai23@igdtuw.ac.in]   
+**College / Campus:** [Indira Gandhi Delhi Technical University for Women]  
 **Demo Video Link:** [https://youtu.be/UNLISTED_DEMO_LINK](https://youtu.be/UNLISTED_DEMO_LINK)  *(Upload unlisted 10-min recording and paste link)*  
 **Slide Deck Link:** [docs/presentation.pdf](docs/presentation.pdf)  *(Also available in repo `/docs/presentation.pdf`)*  
-**Live Application (Vercel):** [https://financial-risk-engine.vercel.app](https://financial-risk-engine.vercel.app)  
+**Live Application (Vercel):** [[https://financial-risk-engine.vercel.app](https://financial-risk-engine-2.vercel.app/)
  
 ---
 
