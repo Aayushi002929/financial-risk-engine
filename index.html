@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelRisk | Unified AI/NLP Financial Risk Engine</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-100 flex flex-col min-h-screen">
+
+  <!-- Top Navigation Header -->
+  <header class="border-b border-white/10 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+          <i data-lucide="shield-alert" class="w-6 h-6 text-white"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
+            <span class="gradient-text font-black text-2xl tracking-wider">SentinelRisk</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800">Unified AI/NLP Engine</span>
+          </h1>
+          <p class="text-xs text-slate-400">Real-time Unstructured Data Ingestion & Capital Risk Analytics</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
+          <span class="pulse-dot"></span>
+          <span>Pipeline: Active Ingestion</span>
+        </div>
+        <button onclick="simulateAllFeeds()" class="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          <span>Process Sample Stream</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex-1 w-full space-y-8">
+
+    <!-- KPI Metrics Banner -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass-panel p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Ingested Sources</p>
+          <h3 class="text-2xl font-bold text-white mt-1">2 Live Feeds</h3>
+          <p class="text-[11px] text-cyan-400 mt-0.5">Financial News & Social (X/Twitter)</p>
+        </div>
+        <div class="p-3 bg-cyan-900/30 border border-cyan-500/20 rounded-xl text-cyan-400">
+          <i data-lucide="rss" class="w-6 h-6"></i>
+        </div>
+      </div>
+
+      <div class="glass-panel p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Processed Signals</p>
+          <h3 id="statTotalSignals" class="text-2xl font-bold text-white mt-1">0</h3>
+          <p class="text-[11px] text-emerald-400 mt-0.5">Extracted Structured Vectors</p>
+        </div>
+        <div class="p-3 bg-emerald-900/30 border border-emerald-500/20 rounded-xl text-emerald-400">
+          <i data-lucide="activity" class="w-6 h-6"></i>
+        </div>
+      </div>
+
+      <div class="glass-panel p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Module A: Tactical S&P Index</p>
+          <h3 class="text-2xl font-bold text-white mt-1">10 Equities</h3>
+          <p class="text-[11px] text-blue-400 mt-0.5">Sentiment-Driven Rebalancing</p>
+        </div>
+        <div class="p-3 bg-blue-900/30 border border-blue-500/20 rounded-xl text-blue-400">
+          <i data-lucide="scale" class="w-6 h-6"></i>
+        </div>
+      </div>
+
+      <div class="glass-panel p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Module B: Wholesale Banking</p>
+          <h3 class="text-2xl font-bold text-white mt-1">$140M Assets</h3>
+          <p class="text-[11px] text-rose-400 mt-0.5">Event-Driven Stress Testing</p>
+        </div>
+        <div class="p-3 bg-rose-900/30 border border-rose-500/20 rounded-xl text-rose-400">
+          <i data-lucide="pie-chart" class="w-6 h-6"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Challenge: NLP Ingestion Engine Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- Interactive Ingestion Workbench (5 Cols) -->
+      <div class="lg:col-span-5 glass-panel p-6 space-y-4 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <h2 class="text-lg font-bold flex items-center gap-2">
+              <i data-lucide="terminal" class="w-5 h-5 text-cyan-400"></i>
+              <span>Core NLP Risk Engine Workbench</span>
+            </h2>
+            <span class="text-xs text-slate-400">Real-Time Parser</span>
+          </div>
+
+          <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+            Ingest raw, unstructured text from news terminals or social media feeds. The NLP engine scores sentiment (-1.0 to +1.0), detects systemic event types, and computes severity impact (1-10).
+          </p>
+
+          <!-- Input Source Toggle -->
+          <div class="mt-4 space-y-3">
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <label class="block">
+                <span class="text-slate-400 mb-1 block">Feed Source</span>
+                <select id="feedSourceSelect" class="w-full px-3 py-2 rounded-lg text-xs bg-slate-800 border border-slate-700">
+                  <option value="Bloomberg / Reuters Terminal">Financial News Terminal</option>
+                  <option value="X / Twitter Stream">X / Twitter Finance Feed</option>
+                  <option value="Regulatory Filing (SEC/DOJ)">Regulatory / Wire Announcement</option>
+                </select>
+              </label>
+
+              <label class="block">
+                <span class="text-slate-400 mb-1 block">Preset Demonstrations</span>
+                <select id="quickSampleSelect" onchange="loadPresetSample(this.value)" class="w-full px-3 py-2 rounded-lg text-xs bg-slate-800 border border-slate-700">
+                  <option value="">-- Choose Sample --</option>
+                  <option value="0">NVIDIA Breakthrough (Bullish)</option>
+                  <option value="1">Tesla DOJ Probe (Bearish)</option>
+                  <option value="2">Geopolitical Strait Crisis (Stress)</option>
+                  <option value="3">Commercial Debt Default (Credit)</option>
+                  <option value="4">Fed Interest Rate Hike (Macro)</option>
+                </select>
+              </label>
+            </div>
+
+            <div>
+              <span class="text-slate-400 text-xs mb-1 block">Unstructured Financial Text</span>
+              <textarea id="rawTextInput" rows="4" placeholder="Enter headline or article text (e.g., 'Apple surges on breakthrough AI earnings beat, outperforming expectations...')" class="w-full p-3 rounded-lg text-xs focus:ring-1 focus:ring-cyan-400"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button onclick="processCustomText()" class="w-full py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 font-semibold text-xs text-white shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <i data-lucide="play" class="w-4 h-4"></i>
+            <span>Ingest & Generate Risk Signal</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-Time Risk Signals Stream (7 Cols) -->
+      <div class="lg:col-span-7 glass-panel p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <h2 class="text-lg font-bold flex items-center gap-2">
+              <i data-lucide="cpu" class="w-5 h-5 text-emerald-400"></i>
+              <span>Generated Risk Signals Stream</span>
+            </h2>
+            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Structured Output Vector</span>
+          </div>
+
+          <!-- Signal Cards Feed Container -->
+          <div id="signalsContainer" class="mt-4 space-y-3 max-h-[340px] overflow-y-auto pr-1">
+            <div class="text-center py-12 text-slate-500 text-xs">
+              No signals generated yet. Click "Process Sample Stream" above or submit text to start ingestion.
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+          <span>Signal Schema: <code>[Sentiment (-1..+1), Event Class, Severity (1..10)]</code></span>
+          <button onclick="clearAllSignals()" class="hover:text-rose-400 transition cursor-pointer">Clear History</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downstream Application Tabs -->
+    <div class="flex border-b border-white/10 space-x-4">
+      <button id="tabBtnA" onclick="switchTab('A')" class="px-5 py-2.5 font-bold text-sm border-b-2 border-cyan-400 text-cyan-400 flex items-center gap-2 transition cursor-pointer">
+        <i data-lucide="layers" class="w-4 h-4"></i>
+        <span>Module A: Tactical Index Rebalancer</span>
+      </button>
+      <button id="tabBtnB" onclick="switchTab('B')" class="px-5 py-2.5 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 transition cursor-pointer">
+        <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+        <span>Module B: Strategic Portfolio Stress-Testing</span>
+      </button>
+    </div>
+
+    <!-- MODULE A VIEW: Tactical Index Rebalancing -->
+    <div id="moduleAView" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Rebalancing Chart (7 cols) -->
+        <div class="lg:col-span-7 glass-panel p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-white/10">
+              <div>
+                <h3 class="text-base font-bold text-white flex items-center gap-2">
+                  <i data-lucide="trending-up" class="w-4 h-4 text-cyan-400"></i>
+                  <span>Mock S&P Index Portfolio Weights</span>
+                </h3>
+                <p class="text-xs text-slate-400">Base Allocation vs. Real-Time Sentiment-Adjusted Allocation</p>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-cyan-950/70 border border-cyan-800 text-cyan-400 font-mono">Sum: 100.0%</span>
+            </div>
+            
+            <div class="h-64 mt-4 relative">
+              <canvas id="rebalanceChart"></canvas>
+            </div>
+          </div>
+
+          <div class="mt-4 p-3 rounded-lg bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
+            <span class="text-cyan-400 font-semibold">Rebalance Mechanics:</span> Stocks with positive sentiment score receive weight increases; negative sentiment stocks get pruned, subject to minimum diversification constraints.
+          </div>
+        </div>
+
+        <!-- Index Table (5 cols) -->
+        <div class="lg:col-span-5 glass-panel p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-white/10">
+              <h3 class="text-base font-bold text-white">Constituent Constituents</h3>
+              <span class="text-xs text-slate-400">10 Mock Equities</span>
+            </div>
+
+            <div class="mt-3 overflow-x-auto max-h-[300px]">
+              <table class="w-full text-left text-xs">
+                <thead>
+                  <tr class="text-slate-400 border-b border-slate-800 pb-2">
+                    <th class="py-2">Ticker</th>
+                    <th>Base %</th>
+                    <th>Curr %</th>
+                    <th>Sentiment</th>
+                  </tr>
+                </thead>
+                <tbody id="indexTableBody" class="divide-y divide-slate-800/60 font-mono">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="pt-3 text-[11px] text-slate-400 border-t border-slate-800/80">
+            Automated subscription to NLP Risk Engine sentiment stream.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE B VIEW: Strategic Portfolio Stress-Testing -->
+    <div id="moduleBView" class="space-y-6 hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Stress Test Summary Banner (12 cols) -->
+        <div class="lg:col-span-12 glass-panel p-6">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
+            <div>
+              <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <i data-lucide="shield-alert" class="w-5 h-5 text-rose-500"></i>
+                <span>Wholesale Banking Portfolio: Event-Driven Stress Simulation</span>
+              </h3>
+              <p class="text-xs text-slate-400">Triggered automatically when NLP Impact Severity &ge; 7 or systemic event categories detected.</p>
+            </div>
+
+            <div id="stressTestStatusBadge" class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300">
+              Awaiting High-Impact Trigger
+            </div>
+          </div>
+
+          <!-- Impact Metrics Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+            <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
+              <span class="text-xs text-slate-400">Base Portfolio Value</span>
+              <p id="stressBaseVal" class="text-xl font-bold text-white font-mono mt-1">$140,000,000</p>
+              <span class="text-[10px] text-slate-500">Unstressed Wholesale Assets</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
+              <span class="text-xs text-slate-400">Stressed Portfolio Value</span>
+              <p id="stressNewVal" class="text-xl font-bold text-white font-mono mt-1">$140,000,000</p>
+              <span id="stressPctDelta" class="text-[10px] text-emerald-400">0.00% Change</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
+              <span class="text-xs text-slate-400">Simulated Drawdown</span>
+              <p id="stressLossVal" class="text-xl font-bold text-rose-400 font-mono mt-1">$0</p>
+              <span class="text-[10px] text-slate-500">Capital At Risk</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
+              <span class="text-xs text-slate-400">Active Shock Parameters</span>
+              <p id="stressShockParams" class="text-xs font-mono text-cyan-300 mt-1">Normal baseline market</p>
+              <span class="text-[10px] text-slate-500">Calibrated to NLP Class</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stress Comparison Chart (6 cols) -->
+        <div class="lg:col-span-6 glass-panel p-6">
+          <h4 class="text-sm font-bold text-white mb-2">Asset Class Value: Baseline vs. Stressed</h4>
+          <div class="h-64 relative">
+            <canvas id="stressChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Asset Inventory Table (6 cols) -->
+        <div class="lg:col-span-6 glass-panel p-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-sm font-bold text-white mb-2">Synthetic Wholesale Portfolio Ledger</h4>
+            <div class="overflow-x-auto max-h-[250px]">
+              <table class="w-full text-left text-xs">
+                <thead>
+                  <tr class="text-slate-400 border-b border-slate-800 pb-2">
+                    <th class="py-2">Asset</th>
+                    <th>Type</th>
+                    <th>Notional</th>
+                    <th>Rating</th>
+                    <th>Impact %</th>
+                  </tr>
+                </thead>
+                <tbody id="wholesaleTableBody" class="divide-y divide-slate-800/60 font-mono">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="pt-3 text-[11px] text-slate-400 border-t border-slate-800">
+            *Includes non-linear sensitivity for hedges (CDS indices) and duration risk on long corporate debt.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950/80 px-6 py-4 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>SentinelRisk AI/NLP Engine &bull; Vercel-Ready Architecture</div>
+      <div class="flex items-center gap-4">
+        <span>TailwindCSS + Chart.js + Pure ES6</span>
+        <span>Clean Separation of Data Pipelines & Portfolio Analytics</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
