@@ -1,0 +1,56 @@
+[
+  {
+    "id": "FEED-001",
+    "source": "Bloomberg News Terminal",
+    "source_type": "Institutional News",
+    "headline": "NVIDIA Unveils Quantum-Ready AI Architecture with Record Order Backlog from Cloud Giants",
+    "content": "NVIDIA Corp (NVDA) surged today after announcing a major technological breakthrough in accelerated datacenter computing, with analysts forecasting a 35% beat on upcoming quarterly margins. Hyperscalers have expanded long-term partnership agreements.",
+    "timestamp": "2026-10-10T14:30:00Z",
+    "author_or_handle": "Reuters/Bloomberg Wire"
+  },
+  {
+    "id": "FEED-002",
+    "source": "X / Twitter Finance Feed",
+    "source_type": "Social Media",
+    "headline": "$TSLA faces regulatory probe over autonomous driving telemetry failures; DOJ opens formal review",
+    "content": "Breaking: Regulators and DOJ have issued a formal subpoena to Tesla following multiple safety discrepancies in full self-driving data logs. Stock down 5.8% pre-market as risk monitors issue severe warnings.",
+    "timestamp": "2026-10-10T14:45:00Z",
+    "author_or_handle": "@MacroBreakings"
+  },
+  {
+    "id": "FEED-003",
+    "source": "Financial Times Live",
+    "source_type": "Institutional News",
+    "headline": "Middle East Strait of Hormuz Tensions Flare; Threatens Crude Shipping Lanes and Strains Global Trade",
+    "content": "Escalating geopolitical conflict and newly introduced retaliatory sanctions have heightened maritime shipping insurance premiums. Global market participants fear acute supply chain disruption and inflation contagion.",
+    "timestamp": "2026-10-10T15:10:00Z",
+    "author_or_handle": "FT Global Energy Desk"
+  },
+  {
+    "id": "FEED-004",
+    "source": "Wall Street Journal Alert",
+    "source_type": "Institutional News",
+    "headline": "Commercial Real Estate Developer Default Rattles Regional Banks; Credit Downgrades Accelerate",
+    "content": "A major commercial office developer with $3.8B in liabilities defaulted on senior syndicated loans, causing rating agencies to initiate swift credit downgrades across bank debt portfolios.",
+    "timestamp": "2026-10-10T15:25:00Z",
+    "author_or_handle": "WSJ Banking & Markets"
+  },
+  {
+    "id": "FEED-005",
+    "source": "X / Twitter MacroWatcher",
+    "source_type": "Social Media",
+    "headline": "Federal Reserve chair signals higher-for-longer policy; 10Y Treasury yields spike to 16-year high",
+    "content": "Fed statement indicates persistent inflation pressures; rate hike trajectory may stay elevated. Heavy pressure observed across wholesale bonds and sovereign debt portfolios as yield curve shifts.",
+    "timestamp": "2026-10-10T15:40:00Z",
+    "author_or_handle": "@YieldCurveDaily"
+  },
+  {
+    "id": "FEED-006",
+    "source": "Bloomberg News Wire",
+    "source_type": "Institutional News",
+    "headline": "JPMorgan Expands Commercial Credit Syndicate as Corporate Earnings Surprise to the Upside",
+    "content": "JPMorgan Chase & Co announced a multi-billion dollar expansion in syndicated lending facilities, citing resilient consumer spending and healthy net interest margins across key wholesale credit segments.",
+    "timestamp": "2026-10-10T16:00:00Z",
+    "author_or_handle": "Bloomberg Markets"
+  }
+]

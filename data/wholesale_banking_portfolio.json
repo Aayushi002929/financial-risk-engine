@@ -1,0 +1,62 @@
+[
+  {
+    "id": "WB-001",
+    "asset_name": "Syndicated Term Loan B (Tech Corp)",
+    "asset_type": "Commercial Loan",
+    "notional_usd": 45000000,
+    "carrying_value_usd": 45000000,
+    "credit_rating": "BBB-",
+    "duration_years": 3.5,
+    "coupon_rate_pct": 6.85
+  },
+  {
+    "id": "WB-002",
+    "asset_name": "Senior Secured Energy Infrastructure Bond",
+    "asset_type": "Corporate Bond",
+    "notional_usd": 35000000,
+    "carrying_value_usd": 35000000,
+    "credit_rating": "A+",
+    "duration_years": 6.2,
+    "coupon_rate_pct": 5.40
+  },
+  {
+    "id": "WB-003",
+    "asset_name": "Interest Rate Swap Portfolio (Float-to-Fixed)",
+    "asset_type": "Derivatives",
+    "notional_usd": 60000000,
+    "carrying_value_usd": 6000000,
+    "credit_rating": "AA-",
+    "duration_years": 4.8,
+    "coupon_rate_pct": 3.75
+  },
+  {
+    "id": "WB-004",
+    "asset_name": "Commercial Real Estate Mezzanine Debt",
+    "asset_type": "Commercial Loan",
+    "notional_usd": 28000000,
+    "carrying_value_usd": 28000000,
+    "credit_rating": "BB",
+    "duration_years": 2.8,
+    "coupon_rate_pct": 8.10
+  },
+  {
+    "id": "WB-005",
+    "asset_name": "Sovereign Emerging Market Debt Notes",
+    "asset_type": "Sovereign Bond",
+    "notional_usd": 22000000,
+    "carrying_value_usd": 22000000,
+    "credit_rating": "BBB",
+    "duration_years": 7.1,
+    "coupon_rate_pct": 6.25
+  },
+  {
+    "id": "WB-006",
+    "asset_name": "Credit Default Swap Index Hedge (CDX.NA.IG)",
+    "asset_type": "Derivatives",
+    "notional_usd": 40000000,
+    "carrying_value_usd": 4000000,
+    "credit_rating": "AAA",
+    "duration_years": 1.5,
+    "coupon_rate_pct": 1.00
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "Information Technology",
+    "base_weight_pct": 14.0,
+    "current_weight_pct": 14.0,
+    "last_sentiment_score": 0.15
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "sector": "Information Technology",
+    "base_weight_pct": 14.0,
+    "current_weight_pct": 14.0,
+    "last_sentiment_score": 0.10
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sector": "Semiconductors",
+    "base_weight_pct": 12.0,
+    "current_weight_pct": 12.0,
+    "last_sentiment_score": 0.25
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon.com Inc.",
+    "sector": "Consumer Discretionary",
+    "base_weight_pct": 10.0,
+    "current_weight_pct": 10.0,
+    "last_sentiment_score": 0.05
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "base_weight_pct": 10.0,
+    "current_weight_pct": 10.0,
+    "last_sentiment_score": 0.08
+  },
+  {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "sector": "Financials",
+    "base_weight_pct": 10.0,
+    "current_weight_pct": 10.0,
+    "last_sentiment_score": -0.05
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla Inc.",
+    "sector": "Automotive & Energy",
+    "base_weight_pct": 8.0,
+    "current_weight_pct": 8.0,
+    "last_sentiment_score": -0.20
+  },
+  {
+    "ticker": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "sector": "Energy",
+    "base_weight_pct": 8.0,
+    "current_weight_pct": 8.0,
+    "last_sentiment_score": 0.12
+  },
+  {
+    "ticker": "PFE",
+    "name": "Pfizer Inc.",
+    "sector": "Healthcare",
+    "base_weight_pct": 7.0,
+    "current_weight_pct": 7.0,
+    "last_sentiment_score": 0.00
+  },
+  {
+    "ticker": "GS",
+    "name": "The Goldman Sachs Group",
+    "sector": "Financials",
+    "base_weight_pct": 7.0,
+    "current_weight_pct": 7.0,
+    "last_sentiment_score": 0.02
+  }
+]
