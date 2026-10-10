@@ -1,4 +1,4 @@
-﻿# SentinelRisk: Real-Time AI/NLP Financial Risk Engine & Capital Analytics Platform
+# SentinelRisk: Real-Time AI/NLP Financial Risk Engine & Capital Analytics Platform
 
 A unified, production-ready financial NLP risk intelligence platform capable of ingesting and analyzing real-time, unstructured data (news feeds and social media) to generate actionable risk signals. 
 
@@ -69,7 +69,6 @@ financial-risk-engine/
 ├── engine.js          # Core AI/NLP Risk Engine & downstream financial math algorithms
 ├── app.js             # UI state controller, interactive charts, and signal stream
 ├── style.css          # Glassmorphism dark financial terminal styling
-├── vercel.json        # Instant deployment configuration for Vercel
 ├── cli_engine.py      # Standalone Python implementation of the NLP Risk Engine
 └── README.md          # Comprehensive documentation and project guide
 ```
@@ -79,4 +78,4 @@ financial-risk-engine/
 ## 💻 Tech Stack
 - **Frontend / Dashboard**: Modern Vanilla ES6+, TailwindCSS, Chart.js, Lucide Icons.
 - **Backend / Engine**: Zero-dependency modular JavaScript & Python 3.
-- **Deployment**: Vercel ready (`vercel.json`), GitHub Pages ready.
+- **Deployment**: Zero-config instant deployment to Vercel, GitHub Pages, or any static host.
