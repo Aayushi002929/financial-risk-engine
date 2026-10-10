@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SentinelRisk - UI Controller & Dashboard Logic
  */
 
@@ -42,7 +42,10 @@ function switchTab(tab) {
     tabA.className = 'px-5 py-2.5 font-semibold text-sm border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 transition cursor-pointer';
     viewB.classList.remove('hidden');
     viewA.classList.add('hidden');
-    if (stressChartInstance) stressChartInstance.update();
+    if (stressChartInstance) {
+      stressChartInstance.resize();
+      stressChartInstance.update();
+    }
   }
 }
 
