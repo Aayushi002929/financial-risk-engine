@@ -5,7 +5,8 @@
 **College / Campus:** [Indira Gandhi Delhi Technical University for Women]  
 **Demo Video Link:** [https://youtu.be/UNLISTED_DEMO_LINK](https://youtu.be/UNLISTED_DEMO_LINK)  *(Upload unlisted 10-min recording and paste link)*  
 **Slide Deck Link:** [docs/presentation.pdf](docs/presentation.pdf)  *(Also available in repo `/docs/presentation.pdf`)*  
-**Live Application (Vercel):** [[https://financial-risk-engine.vercel.app](https://financial-risk-engine-2.vercel.app/)
+**Live Application (Vercel):** [https://financial-risk-engine-2.vercel.app](https://financial-risk-engine-2.vercel.app)  
+
  
 ---
 
