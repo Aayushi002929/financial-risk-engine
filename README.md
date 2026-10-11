@@ -3,7 +3,7 @@
 **Candidate Name:** Aayushi  
 **College Email ID:** [aayushi003bteceai23@igdtuw.ac.in]   
 **College / Campus:** [Indira Gandhi Delhi Technical University for Women]  
-**Demo Video Link:** [https://youtu.be/UNLISTED_DEMO_LINK](https://youtu.be/IhdJyUz1IYo?si=SLqKhczLoshXMgnz))   
+**Demo Video Link:** [https://youtu.be/IhdJyUz1IYo](https://youtu.be/IhdJyUz1IYo)  
 **Slide Deck Link:** [docs/presentation.pdf](docs/presentation.pdf) • [Direct Browser PDF](https://financial-risk-engine-2.vercel.app/docs/presentation.pdf) • [Raw GitHub PDF](https://raw.githubusercontent.com/Aayushi002929/financial-risk-engine/main/docs/presentation.pdf)  
 **Live Application (Vercel):** [https://financial-risk-engine-2.vercel.app](https://financial-risk-engine-2.vercel.app)  
 
